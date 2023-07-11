@@ -1,21 +1,28 @@
+<!DOCTYPE html>
 <html>
-
-<head>
-    <title>React Js First Assignment</title>
-    <!--For Development-->
-    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script> 
-     
-</head>
+    <head>
+        <title>React Js First Assignment</title>
+        <!--For Development-->
+        <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script> 
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    </head>
 
 <body>
     <div id="root">
 
     </div>
 </body>
-<script>
+
+<script type="text/javascript">
+    /*Use by Js*/
     const h1Tag = document.createElement('h1');
-    h1Tag.innerHTML = 'Hello World';
+    h1Tag.innerHTML = 'Hello World !!!';
     document.getElementById('root').appendChild(h1Tag);
+
+    /*Use by React Js*/
+    const elementCall = React.createElement("p", {id:'head-title', style:{color:'red',fontSize:'20px'}}, "This is first react js assignment.");
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(elementCall);
 </script>
 </html>
 
