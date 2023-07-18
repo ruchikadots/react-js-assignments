@@ -1,3 +1,9 @@
+/README.md
+
+/React-App/node_modules
+/React-App/.parcel-cache
+/React-App/dist
+
 .DS_STORE
 node_modules
 scripts/flow/*/.flowconfig
